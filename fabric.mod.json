@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "wcape",
+  "version": "${version}",
+  "name": "Wcape",
+  "description": "Use /Wcape <url> to set a custom cape (client-side, works with cracked).",
+  "environment": "client",
+  "entrypoints": { "client": ["wcape.WcapeClient"] },
+  "mixins": [ { "config": "wcape.mixins.json", "environment": "client" } ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
